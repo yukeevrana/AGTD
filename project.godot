@@ -1,0 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="AGTD"
+run/main_scene="res://Scenes/Main.tscn"
+config/icon="res://icon.png"
+
+[global]
+
+Layer=false
+
+[layer_names]
+
+2d_render/layer_1="tower"
+2d_render/layer_2="tower_area"
+2d_render/layer_3="enemy"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
